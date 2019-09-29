@@ -1,0 +1,30 @@
+.header {
+    display: grid;
+    /* grid-template-columns: 42rem auto auto auto; */
+    grid-template-columns: 32rem 7rem 2rem auto;
+    grid-gap: 10px;
+}
+.header h1 {
+    color: #172B4D;
+    letter-spacing: 0.16px;
+    line-height: 38px;
+}
+
+.header .notification {
+    margin-top: 17px;
+    text-align: center;
+}
+
+.test-mode {
+    padding-left: 11px
+}
+
+.test-mode p {
+    float: right;
+}
+
+.test-mode svg {
+    float: left;
+    margin-top: 17px;
+    font-size: 1.4rem
+}
