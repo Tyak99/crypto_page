@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import etherum from '../../assets/image/etherum.png';
 import bitcoin from '../../assets/image/bitcoin.png';
 import naira from '../../assets/image/nigerian-naira.png';
