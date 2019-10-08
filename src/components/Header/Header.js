@@ -1,12 +1,12 @@
 import React from 'react';
-import './header.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import './header.css';
 
-const Header = () => {
+const Header = ({active}) => {
     return ( 
         <div className="header">
             <div className='grid1'>
-                <h1> Balances </h1>
+                <h1> {active} </h1>
             </div>
             <div className="test-mode">
                 <FontAwesomeIcon icon='toggle-on' color='green'/>

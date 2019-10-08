@@ -21,6 +21,11 @@
     float: right;
 }
 
+.transfer-header span {
+    margin-left: 0.5rem;
+    color: white;
+}
+
 .transfer-title {
     display: flex;
     border: 1px solid #DFE1E6;

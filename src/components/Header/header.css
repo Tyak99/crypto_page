@@ -1,13 +1,15 @@
 .header {
     display: grid;
-    /* grid-template-columns: 42rem auto auto auto; */
     grid-template-columns: 32rem 7rem 2rem auto;
     grid-gap: 10px;
+    margin-top: 0.5rem;
 }
 .header h1 {
+    font-size: 2rem;
     color: #172B4D;
     letter-spacing: 0.16px;
     line-height: 38px;
+    margin-top: 0.6rem;
 }
 
 .notification {

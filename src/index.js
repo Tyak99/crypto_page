@@ -1,13 +1,14 @@
 import React from 'react';
 import ReactDOM from "react-dom";
 import Sidebar from './components/Sidebar/Sidebar';
-import Main from './components/Main/main';
-import Header from './components/Header/Header'
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faHome, faToggleOn, faCog, faWallet, faCode, faMoneyCheck, faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons'
+import { faHome, faToggleOn, faCog, faWallet, faCode, faMoneyCheck, faAngleDoubleRight, faAngleDown } from '@fortawesome/free-solid-svg-icons'
 import { faBitcoin, faEthereum } from '@fortawesome/free-brands-svg-icons'
 import { faBell } from "@fortawesome/free-regular-svg-icons";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import Balance from './components/Balance/Balance'
+import Transfer from './components/Transfer/Transfer'
+
 
 library.add(
     faHome,
@@ -15,6 +16,7 @@ library.add(
     faToggleOn, 
     faBitcoin, 
     faEthereum, 
+    faAngleDown,
     faCog, 
     faWallet, 
     faCode, 
@@ -25,7 +27,13 @@ const App = () => {
     return (
         <div style={{ display: 'flex' }}>
             <Sidebar />
-            <Main />
+            <div style={{flex: 3, marginLeft: '4rem'}}>
+                <Switch>
+                    <Route path='/' exact component={Balance}/>
+                    <Route path='/transfers' component={Transfer} />
+                    <Route render={() => <h2 style={{textAlign: 'center'}}> Sorry :( This page does not exist </h2>}/>
+                </Switch>
+            </div>
         </div>
     )
 }
