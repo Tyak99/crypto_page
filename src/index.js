@@ -7,8 +7,19 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { faHome, faToggleOn, faCog, faWallet, faCode, faMoneyCheck, faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons'
 import { faBitcoin, faEthereum } from '@fortawesome/free-brands-svg-icons'
 import { faBell } from "@fortawesome/free-regular-svg-icons";
+import { BrowserRouter } from "react-router-dom";
 
-library.add(faHome, faBell, faToggleOn, faBitcoin, faEthereum, faCog, faWallet, faCode, faMoneyCheck, faAngleDoubleRight)
+library.add(
+    faHome,
+    faBell, 
+    faToggleOn, 
+    faBitcoin, 
+    faEthereum, 
+    faCog, 
+    faWallet, 
+    faCode, 
+    faMoneyCheck, 
+    faAngleDoubleRight)
 
 const App = () => {
     return (
@@ -20,4 +31,4 @@ const App = () => {
 }
 
 
-ReactDOM.render(<App />, document.getElementById("app"));
+ReactDOM.render(<BrowserRouter> <App /> </BrowserRouter>, document.getElementById("app"));

@@ -1,0 +1,54 @@
+.transfer {
+    background-color: #FFFFFF;
+    border: 1px solid #DFE1E6;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px 0 rgba(15, 15, 15, 0.1);
+    width: 818px;
+}
+
+.transfer-header {
+    border: 1px solid #DFE1E6;
+    height: 2rem;
+    padding: 1rem;
+}
+
+.transfer-header button {
+    color: white;
+    background: #67C462;
+    border-radius: 0.1875rem;
+    padding: 0.4rem 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    float: right;
+}
+
+.transfer-title {
+    display: flex;
+    border: 1px solid #DFE1E6;
+    background-color: #F9F9FA;
+
+}
+
+.transfer-title .ref, .status, .amount {
+    padding-left: 1rem;
+    margin: 0.8rem 0;
+    color: #6B778C;
+}
+.transfer-title .ref {
+    flex: 0.7;
+}
+
+.transfer-title .status {
+    flex: 0.2;
+}
+
+.transfer-body {
+    height: 17rem;
+    text-align: center;
+    color: #42526E;
+    margin-top: 4rem;
+}
+
+.transfer-body h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
