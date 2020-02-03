@@ -1,5 +1,5 @@
 ## CRYPTO_BOOK PAGE
-
+Crypto page is a demo page for a crypto exchange web app
 ## Installation
 
 ```js
